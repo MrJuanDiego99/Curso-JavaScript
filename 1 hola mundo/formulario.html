@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. Formulario con los campos: Nombre, Apellidos y edad
+    2. Boton enviar el formulario (submit)
+    3. Mostrar los datos por pantalla
+    -->
+    <h1>Ejercicio DOM, Eventos y Funciones</h1>
+    
+    <div class="box">
+        <form action="#" method="post" id="form" onsubmit="return false;">
+            <label for="txtnom">Nombre</label> <br>
+            <input type="text" name="txtnom" id="txtnom" pattern="[A-Z][a-z]">
+            <br>
+
+            <label for="txtape">Apellidos</label> <br>
+            <input type="text" name="txtape" id="txtape">
+            <br>
+
+            <label for="txteda">Edad</label><br>
+            <input type="number" name="txteda" id="txteda">
+            <br>
+
+            <input type="submit" value="Enviar" id="submit">
+
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Informacion del usuario</h3>
+        <hr>
+        <p id="p_nom">
+            nombre: <span></span> 
+        </p>
+        <p id="p_ape">
+            apellido: <span></span> 
+        </p>
+        <p id="p_num">
+            numero: <span></span> 
+        </p>
+
+    </div>
+
+    <script src="js/32_ejercicio_dom.js"></script>
+</body>
+</html>
